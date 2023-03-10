@@ -1,0 +1,45 @@
+{
+  "name": "@nghive/eslint-plugin",
+  "version": "0.1.0",
+  "description": "Custom TypeScript/Angular rules for ESLint",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "typescript",
+    "angular"
+  ],
+  "engines": {
+    "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "pre-commit": "pnpm exec lint-staged",
+    "prepare": "is-ci || husky install"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nghive/eslint-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nghive/eslint-plugin/issues"
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "^5.54.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.35.0",
+    "husky": "^8.0.3",
+    "is-ci": "^3.0.1",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.35.0"
+  }
+}
